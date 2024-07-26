@@ -5,6 +5,10 @@
     font-family: sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .main {
     position: relative;
     min-height: 100vh;
@@ -15,6 +19,8 @@
     flex-direction: column;
     padding: 30px 100px;
 }
+
+
 
 header {
     position: absolute;
@@ -55,6 +61,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hi;
 }
 
 .slogan {
@@ -149,12 +156,42 @@ header {
 
         margin-left: 0;
     }
+
+    .main {
+        padding: 20px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content .text {
+        max-width: 100%;
+        padding: 0 10px; /* Adiciona padding para evitar conteúdo colado às bordas */
+    }
+
+    .content .image {
+        width: 100%;
+        padding-right: 0;
+        padding-top: 50px;
+    }
+
+    .content .image img {
+        max-width: 100%;
+    }
+
+    .btn {
+        font-size: 1em;
+        padding: 15px 20px;
+    }
 }
 
 @media (max-width:991px) {
-    .main {
-        padding: 40px;
-    }
 
     header {
         padding: 20px 40px;
